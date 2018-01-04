@@ -1,3 +1,3 @@
 # Flexbox
 
-http://pkolt.github.io/flexbox/index.html
+http://pkolt.github.io/flexbox/
