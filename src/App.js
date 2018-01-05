@@ -5,16 +5,16 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 
 
 const flexBoxValues = {
-   'flex-direction': ['row', 'column'],
+   'flex-direction': ['row', 'column', 'row-reverse', 'column-reverse'],
    'justify-content': ['flex-start', 'flex-end', 'center', 'space-between', 'space-around'],
    'align-items': ['flex-start', 'flex-end', 'center', 'stretch', 'baseline']
 };
 
 const boxesStyle = [
-   {background: '#2ECC71', width: '150px', minHeight: '150px'},
-   {background: '#F2CA27', width: '150px', minHeight: '110px'},
-   {background: '#E74C3C', width: '150px', minHeight: '150px'},
-   {background: '#3498DB', width: '220px', minHeight: '120px'},
+   {background: '#2ECC71', minWidth: '150px', minHeight: '150px'},
+   {background: '#F2CA27', minWidth: '150px', minHeight: '110px'},
+   {background: '#E74C3C', minWidth: '150px', minHeight: '150px'},
+   {background: '#3498DB', minWidth: '220px', minHeight: '120px'},
 ];
 
 const displayStyle = Object.keys(flexBoxValues).reduce((obj, key) => ({...obj, [key]: flexBoxValues[key][0]}), {display: 'flex'});
